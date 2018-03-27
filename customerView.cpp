@@ -10,3 +10,9 @@ void customerView::refresh(order running)
            <<running.getSubtotal()<<std::endl
            <<"===============\n";
 }
+
+void customerView::update(){
+  refresh(*o);
+  return;
+}
+

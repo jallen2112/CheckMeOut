@@ -33,3 +33,8 @@ void cashierView::displayFinalReceipt(order final)
            <<"TOTAL: $"<<final.getTotal()<<std::endl
            <<"================\n";
 }
+
+void cashierView::update(){
+  displayRunningTotal(*o);
+  return;
+}
